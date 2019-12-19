@@ -7,11 +7,11 @@ const products = [
 ];
 
 const calculateTotalPrice = function(allProducts, productName) {
-  let summ;
-  if (productName === products.name) {
-    summ = number(products.price) * number(products.quantity);
+  for (const key of products) {
+    if (productName === key.name) {
+      return Number(key.price) * Number(key.quantity);
+    }
   }
-  return summ;
 };
 
 /*
