@@ -2,8 +2,7 @@
 
 const countProps = function(obj) {
   let counters_obj = 0;
-  const sizeObj = Object.entries(obj);
-  for (let k = 0; k < sizeObj.length; k += 1) {
+  for (let count in obj) {
     counters_obj++;
   }
   return counters_obj;

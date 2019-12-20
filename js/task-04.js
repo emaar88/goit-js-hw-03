@@ -1,10 +1,10 @@
 'use strict';
 const countTotalSalary = function(employees) {
   // твой код
-  let salary = Object.values(employees);
+  // let salary = Object.values(employees);
   let total = 0;
-  for (let summ of salary) {
-    total += summ;
+  for (let summ in employees) {
+    total += employees[summ];
   }
   return total;
 };
