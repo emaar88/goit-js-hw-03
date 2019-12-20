@@ -7,7 +7,6 @@ const products = [
 ];
 
 const getAllPropValues = function(arr, prop) {
-  // твой код
   let array = [];
 
   for (const product of arr) {

@@ -1,11 +1,7 @@
 'use strict';
 
 const countProps = function(obj) {
-  let counters_obj = 0;
-  for (let count in obj) {
-    counters_obj++;
-  }
-  return counters_obj;
+  return Object.keys(obj).length;
 };
 
 /*
